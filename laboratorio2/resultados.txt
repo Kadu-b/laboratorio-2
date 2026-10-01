@@ -1,0 +1,50 @@
+
+--- FCFS ---
+P1: Fim=8 ms, Espera=0 ms, Retorno=8 ms
+P2: Fim=12 ms, Espera=7 ms, Retorno=11 ms
+P3: Fim=21 ms, Espera=10 ms, Retorno=19 ms
+P4: Fim=26 ms, Espera=18 ms, Retorno=23 ms
+Espera média: 8.75 ms
+Retorno médio: 15.25 ms
+Trocas entre processos: 3
+Linha do tempo: P1 [0,8); P2 [8,12); P3 [12,21); P4 [21,26)
+
+--- Round Robin q=3 ---
+P1: Fim=23 ms, Espera=15 ms, Retorno=23 ms
+P2: Fim=16 ms, Espera=11 ms, Retorno=15 ms
+P3: Fim=26 ms, Espera=15 ms, Retorno=24 ms
+P4: Fim=21 ms, Espera=13 ms, Retorno=18 ms
+Espera média: 13.50 ms
+Retorno médio: 20.00 ms
+Trocas entre processos: 9
+Linha do tempo: P1 [0,3); P2 [3,6); P3 [6,9); P4 [9,12); P1 [12,15); P2 [15,16); P3 [16,19); P4 [19,21); P1 [21,23); P3 [23,26)
+
+--- Round Robin q=1 ---
+P1: Fim=23 ms, Espera=15 ms, Retorno=23 ms
+P2: Fim=13 ms, Espera=8 ms, Retorno=12 ms
+P3: Fim=26 ms, Espera=15 ms, Retorno=24 ms
+P4: Fim=20 ms, Espera=12 ms, Retorno=17 ms
+Espera média: 12.50 ms
+Retorno médio: 19.00 ms
+Trocas entre processos: 23
+Linha do tempo: P1 [0,1); P2 [1,2); P1 [2,3); P3 [3,4); P2 [4,5); P4 [5,6); P1 [6,7); P3 [7,8); P2 [8,9); P4 [9,10); P1 [10,11); P3 [11,12); P2 [12,13); P4 [13,14); P1 [14,15); P3 [15,16); P4 [16,17); P1 [17,18); P3 [18,19); P4 [19,20); P1 [20,21); P3 [21,22); P1 [22,23); P3 [23,24); P3 [24,25); P3 [25,26)
+
+--- Round Robin q=50 ---
+P1: Fim=8 ms, Espera=0 ms, Retorno=8 ms
+P2: Fim=12 ms, Espera=7 ms, Retorno=11 ms
+P3: Fim=21 ms, Espera=10 ms, Retorno=19 ms
+P4: Fim=26 ms, Espera=18 ms, Retorno=23 ms
+Espera média: 8.75 ms
+Retorno médio: 15.25 ms
+Trocas entre processos: 3
+Linha do tempo: P1 [0,8); P2 [8,12); P3 [12,21); P4 [21,26)
+
+--- SJF não preemptivo ---
+P1: Fim=8 ms, Espera=0 ms, Retorno=8 ms
+P2: Fim=12 ms, Espera=7 ms, Retorno=11 ms
+P3: Fim=26 ms, Espera=15 ms, Retorno=24 ms
+P4: Fim=17 ms, Espera=9 ms, Retorno=14 ms
+Espera média: 7.75 ms
+Retorno médio: 14.25 ms
+Trocas entre processos: 3
+Linha do tempo: P1 [0,8); P2 [8,12); P4 [12,17); P3 [17,26)
